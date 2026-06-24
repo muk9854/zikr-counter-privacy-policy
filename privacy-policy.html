@@ -114,11 +114,12 @@
         <ul>
             <li>Counter values for each zikr</li>
             <li>App theme preference (dark/light mode)</li>
-            <li>Daily reminder notification settings</li>
+            <li>Daily reminder notification settings (enabled/disabled, reminder time)</li>
             <li>Usage streak information</li>
             <li>Vibration toggle preference</li>
         </ul>
         <p>All local data is stored using the device's application documents directory. This data can be permanently deleted by uninstalling the app or clearing app data through your device settings.</p>
+        <p><strong>Important:</strong> The app does <strong>not</strong> collect any information about your notifications, notification content, or notification delivery. Notification data never leaves your device.</p>
 
         <h2>Third-Party Services</h2>
 
@@ -139,6 +140,16 @@
         <h3>Google Play Services / Apple App Store</h3>
         <p>The app is distributed through the Google Play Store and Apple App Store. These platforms may collect standard analytics and crash data as part of their normal operation. Please refer to their respective privacy policies for more information.</p>
 
+        <h2>Notifications</h2>
+        <p>The app uses <strong>local notifications only</strong> (no push notification service like Firebase Cloud Messaging). These notifications are generated entirely on your device and are never sent to any server. Specifically:</p>
+        <ul>
+            <li>You can choose to receive a daily reminder at a time you select</li>
+            <li>All notification scheduling is handled locally on your device</li>
+            <li>No notification data, timing, or content is transmitted to us or any third party</li>
+            <li>You can disable reminders at any time from the app's settings screen</li>
+            <li>You can also revoke notification permission from your device settings</li>
+        </ul>
+
         <h2>Device Permissions</h2>
         <table>
             <tr>
@@ -147,11 +158,11 @@
             </tr>
             <tr>
                 <td>Notifications (Android/iOS)</td>
-                <td>To send daily reminder notifications</td>
+                <td>To send daily reminder notifications for zikr. You can enable or disable this at any time through the app settings or your device settings.</td>
             </tr>
             <tr>
                 <td>Internet (Android)</td>
-                <td>Required by Google AdMob to display ads</td>
+                <td>Required by Google AdMob to display advertisements. No user data is transmitted over the network beyond standard ad requests.</td>
             </tr>
         </table>
         <p>No other permissions (camera, microphone, location, contacts, storage, etc.) are requested or used.</p>
